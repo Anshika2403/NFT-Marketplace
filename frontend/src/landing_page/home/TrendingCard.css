@@ -1,0 +1,31 @@
+.main {
+  height: 330px;
+  width: 330px;
+}
+
+.blocka,
+.blockb,
+.blockc {
+  height: 100px;
+  width: 100px;
+}
+
+.blockb {
+  margin-left: -0.2rem;
+}
+
+.blockc {
+  margin-left: 0.4rem;
+  border-radius: 20px;
+  background-color: #a259ff;
+  padding: 2.5rem 1.8rem;
+}
+
+.use img {
+  height: 40px;
+  width: 40px;
+}
+
+h6 {
+  margin: 0.5rem 1rem;
+}

@@ -1,0 +1,163 @@
+.container {
+  margin: 6rem 8rem;
+}
+
+.head {
+  font-size: 67px;
+  font-weight: 700;
+}
+
+.sub {
+  opacity: 0.8;
+  padding: 1.5rem 0;
+}
+
+.get {
+  position: absolute;
+  top: 34rem;
+  left: 16.5rem;
+  transform: translate(-50%, -50%);
+}
+
+.link_get {
+  position: relative;
+}
+
+a {
+  display: block;
+  width: 240px;
+  height: 50px;
+  line-height: 50px;
+  font-weight: bold;
+  text-decoration: none;
+  background: #a259ff;
+  text-align: center;
+  text-transform: uppercase;
+  color: #fff;
+  transition: all 0.35s;
+}
+
+.icon {
+  width: 50px;
+  height: 50px;
+  border: 3px solid transparent;
+  position: absolute;
+  transform: rotate(45deg);
+  left: 12.3rem;
+  top: 0;
+  z-index: -1;
+  transition: all 0.35s;
+}
+
+.ro {
+  width: 30px;
+  position: absolute;
+  top: calc(50% - 15px);
+  left: calc(50% - 15px);
+  transform: rotate(-45deg);
+  fill: #a259ff;
+  transition: all 0.35s;
+}
+
+a:hover {
+  width: 200px;
+  border: 3px solid #a259ff;
+  background: transparent;
+  color: #a259ff;
+}
+
+a:hover + .icon {
+  border: 3px solid #a259ff;
+  right: -25%;
+}
+
+.card {
+  margin: 2rem 5rem;
+  width: 25rem;
+  height: 31rem;
+  background-color: #3b3b3b;
+  border-radius: 1rem;
+  overflow: hidden;
+  animation: y-axis-animation 4s linear 0s infinite;
+}
+
+.card::before {
+  position: absolute;
+  width: 150%;
+  height: 180%;
+  background: conic-gradient(
+    from 270deg,
+    rgb(0 0 0 / 0%) 70%,
+    rgb(11 78 230 / 9%) 80%,
+    rgb(225 225 225) 100%
+  );
+  content: "";
+  left: -5%;
+  top: -5%;
+  z-index: -1;
+  animation: rotate 8s infinite linear alternate;
+}
+
+.card::after {
+  position: relative;
+  left: 0.4rem;
+  top: 0.4rem;
+  width: 98.5%;
+  height: 99%;
+  background-color: #3b3b3b;
+  border-radius: 5px;
+  content: "";
+  z-index: -1;
+}
+
+@keyframes rotate {
+  50% {
+    transform: rotate(180deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes y-axis-animation {
+  from {
+    transform: rotateY(-30deg);
+  }
+  to {
+    transform: rotateY(30deg);
+  }
+}
+
+.cardimg {
+  position: absolute;
+  top: 11rem;
+  left: 49.75rem;
+  margin: 1rem;
+  width: 22.2rem;
+  height: 22rem;
+  border: 2px solid #3b3b3b;
+  border-radius: 1rem;
+  animation: y-axis-animation 4s linear 0s infinite;
+}
+
+.dp {
+  position: absolute;
+  top: 35.5rem;
+  left: 51.5rem;
+  height: 60px;
+  width: 60px;
+  animation: y-axis-animation 4s linear 0s infinite;
+}
+
+.content {
+  position: absolute;
+  top: 35.5rem;
+  left: 55rem;
+  color: #fff;
+  margin-left: 1rem;
+  animation: y-axis-animation 4s linear 0s infinite;
+}
+
+.content span {
+  color: #858584;
+}
